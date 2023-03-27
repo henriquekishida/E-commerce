@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desenvolvedor M3</title>
+  <link rel="stylesheet" href="main.css" />
+
+</head>
+
+<body>
+  <main>
+
+    <nav>
+      <img class="logo" src="img/logo-m3.png" alt="logo">
+
+      <a id="cart-link">
+        <div class="counter">
+          <svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <rect width="17" height="20" fill="url(#pattern0)" />
+            <defs>
+              <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0_2_13" transform="scale(0.0588235 0.05)" />
+              </pattern>
+              <image id="image0_2_13" width="17" height="20"
+                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAUCAYAAABroNZJAAAAvElEQVQ4Ea2TAQ0CMQxFnwQkIAUJSMAJOAAJOAAH4ORwAA4gb1lJLnAH6faTpXdt/9+6/MF3LIAtcAauNfpv/i8sK+kAnIBLjfuat/4T7uzaAUEwKhq1WZE1cAc2E13mH4B9k3B372EO1u37gDt4cTG/31Mr7sn66MTO+kwseW9kBILTT0QDhWomFgOuGkXk00VE42TGCE4xnsaJRCYW43UROTaexIdZXmZmjOAU12YtPxK5NY4zOE4opuMLN/z2esJif9wAAAAASUVORK5CYII=" />
+            </defs>
+          </svg>
+          <span class="amount-of-items">0</span>
+        </div>
+      </a>
+    </nav>
+    <hr>
+
+    <div class="page">
+      <header>
+        <h1>Blusas</h1>
+        <div id="sortBy">
+          <div class="mobileSelector">
+            <div class="mobile">
+              <p class="filterBtn">Filtrar</p>
+            </div>
+            <div class="mobile">
+              <p class="sortBtn">Ordenar</p>
+            </div>
+          </div>
+
+          <div class="sort">
+            <p class="sortP">Ordenar por:&nbsp
+              <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L7 10L13 1.00935" stroke="#666666" stroke-linecap="round" />
+              </svg>
+            </p>
+          </div>
+
+          <ul class="dropdown">
+            <li class="recent">Mais recente</li>
+            <li class="lower">Menor preço</li>
+            <li class="highest">Maior preço</li>
+          </ul>
+        </div>
+
+        <div class="sortByMobile">
+          <h2>Ordenar<p class="close">X</p>
+          </h2>
+          <ul class="mobileSortList">
+            <li class="recent">Mais recente</li>
+            <li class="lower">Menor preço</li>
+            <li class="highest">Maior preço</li>
+          </ul>
+        </div>
+
+      </header>
+
+      <div class="wrapper">
+        <section class="filters">
+          <div class="filter">
+            <div class="filterMobile">
+              <h2>Filtrar<p class="close1">X</p>
+              </h2>
+            </div>
+            <div id="colors">
+              <span class="title">Cores</span>
+            </div>
+            <p class="viewAllColors">Ver todas as cores &#709;</p>
+
+            <div id="sizes">
+              <span class="title">Tamanhos</span>
+              <div class="size">
+                <input type="checkbox" class="checkbox" name="size" id="P" value="P">
+                <label for="P">P</label>
+
+                <input type="checkbox" class="checkbox" name="size" id="M" value="M">
+                <label for="M">M</label>
+
+                <input type="checkbox" class="checkbox" name="size" id="G" value="G">
+                <label for="G">G</label>
+
+                <input type="checkbox" class="checkbox" name="size" id="GG" value="GG">
+                <label for="GG">GG</label>
+
+                <input type="checkbox" class="checkbox" name="size" id="U" value="U">
+                <label for="U">U</label>
+
+                <input type="checkbox" class="checkbox" name="size" id="36" value="36">
+                <label for="36">36</label>
+
+                <input type="checkbox" class="checkbox" name="size" id="38" value="38">
+                <label for="38">38</label>
+
+                <input type="checkbox" class="checkbox" name="size" id="40" value="40">
+                <label for="40">40</label>
+
+                <input type="checkbox" class="checkbox" name="size" id="42" value="42">
+                <label for="42">42</label>
+
+                <input type="checkbox" class="checkbox" name="size" id="44" value="44">
+                <label for="44">44</label>
+
+                <input type="checkbox" class="checkbox" name="size" id="46" value="46">
+                <label for="46">46</label>
+              </div>
+            </div>
+
+            <div class="prices">
+              <span class="title">Faixa de preço</span>
+              <div class="priceContainer">
+                <div class="50">
+                  <input class="price" name="price" id="50" type="checkbox" value="upTo50" />
+                  <label for="50">de R$0 até R$50</label>
+                </div>
+                <div>
+                  <input class="price" name="price" id="150" type="checkbox" value="upTo150" />
+                  <label for="150">de R$51 até R$150</label>
+                </div>
+                <div>
+                  <input class="price" name="price" id="300" type="checkbox" value="upTo300" />
+                  <label for="300">de R$151 até R$300</label>
+                </div>
+                <div>
+                  <input class="price" name="price" id="500" type="checkbox" value="upTo500" />
+                  <label for="500">de R$301 até R$500</label>
+                </div>
+                <div>
+                  <input class="price" name="price" id="above500" type="checkbox" value="above500" />
+                  <label for="above500">a partir de R$ 500</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="btn-apply">
+              <button class="apply">APLICAR</button>
+              <button class="clean">FECHAR</button>
+            </div>
+          </div>
+        </section>
+
+        <section id="products">
+
+        </section>
+      </div>
+      <div class="loadMore">
+        <button class="loadMoreButton">Carregar mais</button>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <p>M3: Implantação de E-commerce VTEX</p>
+    </footer>
+
+  </main>
+</body>
+
+
+<script src="bundle.js"></script>
+
+</html>
