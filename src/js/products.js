@@ -1,5 +1,8 @@
 import { filterByPrice } from "./priceFilter"
 import { filterBySize } from "./sizeFilter"
+import { addToCart, listCartItems, displayCart } from "./cart"
+
+let cart = new Map()
 
 export function renderProduct(data) {
 
@@ -36,6 +39,11 @@ export function renderProduct(data) {
         `
   ).join("")
   document.getElementById('products').innerHTML = div
+
+  let buyButtons = document.querySelectorAll('.buy')
+  buyButtons.forEach(buyButton => {
+    buyButton.addEventListener("click", function () { addToCart(buyButton, cart) })
+  })
 }
 
 filterByPrice()
